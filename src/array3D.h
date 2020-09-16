@@ -75,6 +75,7 @@ inline Array3D<T>::Array3D(int sizeX, int sizeY, int sizeZ) :
 template <typename T>
 inline T & Array3D<T>::operator()(int i)
 {
+	return m_data[0]; /*Remove this line*/
 	// return the element at location i, where i spans all X, Y, and Z dimensions of the array
 	// throw OutOfBoundsException if i is negative or larger than the array size
 }
@@ -82,6 +83,7 @@ inline T & Array3D<T>::operator()(int i)
 template <typename T>
 inline T & Array3D<T>::operator()(int x, int y, int z)
 {
+	return m_data[0]; /*Remove this line*/
 	// Return the value in x,y,z and throw out of bounds if the input is invalid
 }
 
@@ -89,12 +91,14 @@ inline T & Array3D<T>::operator()(int x, int y, int z)
 template <typename T>
 inline const T & Array3D<T>::operator()(int i) const
 {
+	return m_data[0]; /*Remove this line*/
 	// Implement me!
 }
 
 template <typename T>
 inline const T & Array3D<T>::operator()(int x, int y, int z) const
 {
+	return m_data[0]; /*Remove this line*/
 	// Implement me!
 }
 
